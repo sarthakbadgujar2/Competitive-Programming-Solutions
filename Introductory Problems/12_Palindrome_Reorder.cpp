@@ -16,8 +16,8 @@ int main()
     vector<char> even,odd;
     
     int c = 0;
-
-    for(int i=0;i<s.size();i++)
+    ll len = s.length();
+    for(int i=0;i<len;i++)
     	f[s[i]-65]++;
 
     for (int i=0;i<26;i++)
