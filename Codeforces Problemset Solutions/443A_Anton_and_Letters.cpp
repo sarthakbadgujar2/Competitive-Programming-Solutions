@@ -18,8 +18,17 @@ int main()
 	while(t--)
 	{
 		string str;
-		cin >> str;
-		cout << str;
+		getline(cin,str);
+		
+		set<char> distinct;
+		for(int i=0;i<str.size();i++)
+		{
+			if(str[i] >= 97 && str[i] <= 122)
+			{
+				distinct.insert(str[i]);
+			}
+		}
+		cout << distinct.size();
 	}	
 }
 
